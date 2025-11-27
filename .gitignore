@@ -13,16 +13,16 @@ venv/
 .vscode/
 
 # Data folders
-data/raw/
-data/cleaned/
-data/outputs/
+# data/raw/
+# data/cleaned/
+# data/outputs/
 
 # Reports figures (optional)
 reports/figures/
 
 # Configs with sensitive info
-config/db_config.yaml
-config/scraper_config.yaml
+# config/db_config.yaml
+# config/scraper_config.yaml
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/

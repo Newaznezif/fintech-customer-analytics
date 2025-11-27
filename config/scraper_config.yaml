@@ -1,0 +1,21 @@
+app_ids:
+  CBE: "com.combanketh.mobilebanking"
+  BOA: "com.boa.boaMobileBanking"
+  DASHEN: "com.dashen.dashensuperapp"
+
+bank_names:
+  CBE: "Commercial Bank of Ethiopia"
+  BOA: "Bank of Abyssinia"
+  DASHEN: "Dashen Bank"
+
+reviews_per_bank: 600
+lang: "en"
+country: "us"
+
+data_paths:
+  raw_folder: "data/raw"
+  cbe_raw: "data/raw/cbe_raw.csv"
+  boa_raw: "data/raw/boa_raw.csv"
+  dashen_raw: "data/raw/dashen_raw.csv"
+  all_raw: "data/raw/all_reviews.csv"
+  app_info: "data/raw/app_info.csv"

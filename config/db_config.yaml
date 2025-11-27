@@ -1,0 +1,6 @@
+username: "postgres" # your DB username
+password: "postgres" # your DB password
+host: "localhost"
+port: 5432
+database: "fintech_reviews"
+driver: "postgresql"
