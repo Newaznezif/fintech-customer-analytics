@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environments
+env/
+venv/
+.venv/
+
+# VS Code
+.vscode/
+
+# Data folders
+data/raw/
+data/cleaned/
+data/outputs/
+
+# Reports figures (optional)
+reports/figures/
+
+# Configs with sensitive info
+config/db_config.yaml
+config/scraper_config.yaml
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
