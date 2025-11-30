@@ -32,3 +32,24 @@ Collect customer reviews from Google Play for three banks (CBE, BOA, Dashen), cl
 - Clean, normalized CSV dataset ready for analysis.
 - Task code version-controlled on GitHub (`task-1` branch) with meaningful commits.
 
+## Task 3: PostgreSQL Database Schema
+
+### Tables
+
+**app_info**
+| Column   | Type    | Key         | Description                   |
+|----------|---------|------------|-------------------------------|
+| app_id   | INT     | PRIMARY KEY | Unique ID for the bank app     |
+| bank_name| TEXT    |             | Name of the bank              |
+
+**reviews**
+| Column           | Type       | Key         | Description                         |
+|-----------------|------------|------------|-------------------------------------|
+| review_id       | UUID       | PRIMARY KEY | Unique review identifier            |
+| app_id          | INT        | FOREIGN KEY | Links to app_info.app_id            |
+| review_text     | TEXT       |             | User review content                 |
+| rating          | INT        |             | Star rating (1–5)                  |
+| review_date     | DATE       |             | Date of review                      |
+| sentiment_label | TEXT       |             | positive, neutral, or negative      |
+| sentiment_score | FLOAT      |             | Sentiment confidence score          |
+| source          | TEXT       |             | Source of the review (e.g., Google Play) |
